@@ -4,10 +4,13 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
+body {
     background: #080808;
     color: #fff;
+
 }
+
+
 
 #header{
     width: 100%;
@@ -17,35 +20,61 @@ body{
     background-position: center;
 }
 .container-gallery {
-   
-    position: relative;
+    position: absolute;
+    width: 80%;
+    left: 10%;
 }
 .container {
     padding: 10px 10%;
-
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed !important;
+    position: absolute; /*ie6 */
+    background-color: white;
+    z-index: 8;
+    height: 10%;
+    width: 102%;
+    right: -1.5%;
+    top: -1%;
+    border: 1px solid black;
+}
+
+nav b {
+    position: absolute;
+    left: 2%;
+    font-size: 3em;
+    
+}
+
+nav b span{
+    color: red;
 }
 
 .logo{
     width: 140px;
 }
 
-nav ul li{
+nav ul {
+    position: absolute;
+    left: 70%;
+}
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+
 }
 
 nav ul li a{
-    color: #fff;
+    color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     position: relative;
 }
 
@@ -63,26 +92,31 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-.header-text{
+.header-text {
+    font-size: 40px;
+    
+    padding: 50px;
+    position: absolute;
+    text-align: left;
+    height: 80%;
+    width: 45%;
+    overflow: auto;
+    left: 5%;
+    top: 10%;
+}
+
+.header-text p{
     font-size: 40px;
     margin-top: 20px;
 }
 
-.header-text h1{
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-.header-text h1 span{
+.header-text p span{
     color: #ff004f;
 }
 
-.header-text-about {
-    color: #000000;
-}
 
 .header-text-contact {
-    color: #ff004f;
+    color: black;
 }
 
 .text-box {
@@ -197,9 +231,151 @@ h1 {
 .MYOB-description {
     display: block;
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    margin-top: 70%;
+    position: relative;
+    color: black;
+    margin-bottom: 7%;
+}
+
+.Etherea-description {
+    display: block;
+    font-size: 1.5em;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10%;
+    color: black;
+    
 }
 
 .Etherea-Images {
+    right: 50%;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+.header-text-about {
+    color: #000000;
+    border: 10px solid #ccc;
+    background-color: ghostwhite;
+    padding: 50px;
+    position: absolute;
+    text-align: left;
+    height: 77.5%;
+    width: 45%;
+    overflow: auto;
+    left: 5%;
+    top: 10%;
+}
+
+.header-text-portfolio {
+    color: #000000;
+}
+
+.header-text-contact form input{
+    right: 50%;
+}
+
+.left-wing:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid dodgerblue;
+    border-top: 30px solid dodgerblue;
+    border-bottom: 30px solid transparent;
+    left: -1.2em;
+    top: 0px;
+}
+
+.left-wing2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid dodgerblue;
+    border-top: 30px solid dodgerblue;
+    border-bottom: 30px solid transparent;
+    left: -1.2em;
+    bottom: 25.3em;
+}
+
+.wing-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 30px solid #e6e6e6;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #e6e6e6;
+    border-bottom: 30px solid transparent;
+    right: -30px;
+    top: 8.34em;
+}
+
+.wing-right2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 30px solid #e6e6e6;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #e6e6e6;
+    border-bottom: 30px solid transparent;
+    right: -30px;
+    top: 53.83em;
+}
+
+.header-text-contact form {
+    display: table;
+    margin-left: 12%;
+}
+
+.header-text-contact form p {
+    display: table-row;
+}
+
+.header-text-contact form p label {
+    display: table-cell;
+    border-radius: 7px;
+    padding: 2px;
+    font-family: OpenSans;
+    font-size: 1.5em;
+}
+
+.header-text-contact form p input {
+    display: table-cell;
+    border-radius: 7px;
+    padding: 2px;
+    font-family: OpenSans;
+    font-size: 1.5em;
+}
+
+.header-text-contact form p textarea {
+    display: table-cell;
+    border-radius: 7px;
+    padding: 2px;
+    font-family: OpenSans;
+    font-size: 1.5em;
+}
+
+@font-face {
+    font-family: "Cave-Font";
+    src: url(fonts/Cave-Stone.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(fonts/OpenSans-VariabeFont_wdth,wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Lora-Regular";
+    src: url(fonts/Lora-Regular.ttf) format("truetype");
 }
