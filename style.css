@@ -12,10 +12,10 @@ body {
 
 
 
-#header{
+#header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/BackgroundHolder.jpg);   
+    background-image: url(images/Water_Fountain.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -44,6 +44,19 @@ nav {
     border: 1px solid black;
 }
 
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.message {
+    display: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
 nav b {
     position: absolute;
     left: 2%;
@@ -61,7 +74,8 @@ nav b span{
 
 nav ul {
     position: absolute;
-    left: 70%;
+    left: 85em;
+    width: 40em;
 }
 
 nav ul li {
@@ -303,7 +317,7 @@ html {
     border-top: 30px solid dodgerblue;
     border-bottom: 30px solid transparent;
     left: -1.2em;
-    bottom: 25.3em;
+    top: 33.42em;
 }
 
 .wing-right:before {
@@ -315,8 +329,8 @@ html {
     border-right: 30px solid transparent;
     border-top: 30px solid #e6e6e6;
     border-bottom: 30px solid transparent;
-    right: -30px;
-    top: 8.34em;
+    left: 62.2em;
+    top: 8.36em;
 }
 
 .wing-right2:before {
@@ -328,8 +342,8 @@ html {
     border-right: 30px solid transparent;
     border-top: 30px solid #e6e6e6;
     border-bottom: 30px solid transparent;
-    right: -30px;
-    top: 53.83em;
+    left: 62.2em;
+    top: 55em;
 }
 
 .header-text-contact form {
